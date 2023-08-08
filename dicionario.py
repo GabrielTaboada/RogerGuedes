@@ -1,14 +1,9 @@
-tabela = {"alface": [0.45, 2010], "batata": 1.2, "tomate": 2.3, "feijao": 1.5}
-print(tabela)
-print(tabela["alface"])
-del tabela["tomate"]
-print (tabela)
-
-print("manga" in tabela)
-print("batata" in tabela)
-
-print(tabela["alface"])
-tabela["alface"][0] = 1
-tabela["alface"][1] = 2029
-print(tabela["alface"])
-
+elenco = {"renato": "600.000,00", "yuri": "1.000.000,00", "murilo": "80.000,00"}
+while True:
+    jogador = input("Digite o nome do jogador ou fim para terminar:")
+    if jogador.lower() == "fim":
+        break
+    elif jogador in elenco:
+        print(f"Preço: R$ {elenco[jogador]}")
+    else:
+        print("Jogador não está no elenco.")
